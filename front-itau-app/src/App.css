@@ -1,0 +1,86 @@
+
+.card-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-display {
+  background: #fff;
+  padding: 2rem;
+  width: 100dvw;
+  height: 100dvh;
+  max-height: 100dvh;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 767px) {
+.content-display {
+  padding: 10px;
+  }
+}
+
+.card-vehicles {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.vehicles-card {
+  background: #f9f9f9;
+  padding: 10px;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: 0.4s;
+  cursor: pointer;
+  width: 19.5%;
+  height: 65dvh;
+  border: 0.10px solid rgb(208, 208, 208);
+}
+
+.vehicles-card:hover {
+  transform: scale(1.03);
+  background: #e0e0e0;
+  border: 2px solid orangered; 
+}
+
+.card-title {
+  display: flex;
+  justify-content: start;
+  color: orangered;
+  font-style: italic;
+}
+
+
+.vehicle-image {
+  margin-top: 1rem;
+  width: 100%;
+  height: auto;
+  border-radius: 6px !important;
+}
+
+.btn-contact {
+  display: flex;
+  justify-content: start;
+}
+
+.btn-contact {
+  background-color: white;
+  color: orangered;
+  border: 1px solid orangered;
+}
+
+.btn-contact:hover {
+  background-color: orangered;
+  transition: 0.4s ease-in-out;
+  color: white;
+  border: 1px solid white;
+
+}

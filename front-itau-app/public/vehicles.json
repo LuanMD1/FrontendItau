@@ -1,0 +1,82 @@
+[
+  {
+    "id": 0,
+    "image": "/src/assets/images/porsche.png",
+    "brand": "Porsche",
+    "model": "Porsche 911",
+    "color": "Branco",
+    "price": "R$ 76.000,00",
+    "isFavorite": false,
+    "description": "Hyundai HB20 1.0 Comfort manual",
+    "information": [
+      "Localiza Seminovos",
+      "São Paulo, SP",
+      "2021-2022",
+      "48.785 Km"
+    ]
+  },
+  {
+    "id": 1,
+    "image": "/src/assets/images/ferrari.png",
+    "brand": "Ferrari",
+    "model": "Ferrari LaFerrari",
+    "color": "Vermelho",
+    "price": "R$ 76.000,00",
+    "isFavorite": false,
+    "description": "Hyundai HB20 1.0 Comfort manual",
+    "information": [
+      "Localiza Seminovos",
+      "São Paulo, SP",
+      "2021-2022",
+      "48.785 Km"
+    ]
+  },
+  {
+    "id": 2,
+    "image": "/src/assets/images/hrv.png",
+    "brand": "Hyundai",
+    "model": "Hyundai HRV",
+    "color": "Branco",
+    "price": "R$ 186.000,00",
+    "isFavorite": true,
+    "description": "Hyundai HRV 2.0 Comfort Automatic",
+    "information": [
+      "Localiza Seminovos",
+      "São Paulo, SP",
+      "2021-2022",
+      "48.785 Km"
+    ]
+  },
+  {
+    "id": 3,
+    "image": "/src/assets/images/creta.png",
+    "brand": "Hyundai",
+    "model": "Hyundai Creta",
+    "color": "Verde militar claro",
+    "price": "R$ 76.000,00",
+    "isFavorite": false,
+    "description": "Hyundai HB20 1.0 Comfort manual",
+    "information": [
+      "Localiza Seminovos",
+      "São Paulo, SP",
+      "2021-2022",
+      "48.785 Km"
+    ]
+  },
+  {
+    "id": 4,
+    "image": "/src/assets/images/hb20.png",
+    "brand": "Hyundai",
+    "model": "Hyundai HB20",
+    "color": "Preto",
+    "price": "R$ 76.000,00",
+    "isFavorite": true,
+    "description": "Hyundai HB20 1.0 Comfort manual",
+    "information": [
+      "Localiza Seminovos",
+      "São Paulo, SP",
+      "2021-2022",
+      "48.785 Km"
+    ]
+  }
+]

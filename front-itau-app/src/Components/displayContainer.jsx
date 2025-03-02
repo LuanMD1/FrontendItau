@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
 import SearchBar from "./searchBar";
+import { FaHeart } from 'react-icons/fa';
+import { ToastContainer, toast } from 'react-toastify';
 // import Modal from "react-responsive-modal";
 
 export default function DisplayContainer() {
     const [vehicles, setVehicles] = useState([]);
-    // const [favorite, setFavorite] = useState(false);
 
     useEffect(() => {
         const vehicles = [
@@ -15,6 +16,7 @@ export default function DisplayContainer() {
                 model: "Porsche 911",
                 color: 'Branco',
                 price: "R$ 76.000,00",
+                isFavorite: false,
                 description: "Hyundai HB20 1.0 Comfort manual",
                 information: [
                     "Localiza Seminovos",
@@ -30,6 +32,7 @@ export default function DisplayContainer() {
                 model: "Ferrari LaFerrari",
                 color: 'Vermelho',
                 price: "R$ 76.000,00",
+                isFavorite: false,
                 description: "Hyundai HB20 1.0 Comfort manual",
                 information: [
                     "Localiza Seminovos",
@@ -45,6 +48,7 @@ export default function DisplayContainer() {
                 model: "Hyundai HRV",
                 color: 'Branco',
                 price: "R$ 186.000,00",
+                isFavorite: false,
                 description: "Hyundai HRV 2.0 Comfort Automatic",
                 information: [
                     "Localiza Seminovos",
@@ -60,6 +64,7 @@ export default function DisplayContainer() {
                 model: "Hyundai Creta",
                 color: 'Verde militar claro',
                 price: "R$ 76.000,00",
+                isFavorite: false,
                 description: "Hyundai HB20 1.0 Comfort manual",
                 information: [
                     "Localiza Seminovos",
@@ -75,6 +80,7 @@ export default function DisplayContainer() {
                 model: "Hyundai HB20",
                 color: 'Preto',
                 price: "R$ 76.000,00",
+                isFavorite: true,
                 description: "Hyundai HB20 1.0 Comfort manual",
                 information: [
                     "Localiza Seminovos",
@@ -88,6 +94,20 @@ export default function DisplayContainer() {
         setVehicles(vehicles);
     }, []); 
 
+    function toggleFavorite(id) {
+      setVehicles((prevVehicles) =>
+          prevVehicles.map((vehicle) => {
+              if (vehicle.id === id) {
+                  if (!vehicle.isFavorite) {
+                      toast.success("Veículo favoritado!");
+                  }
+                  return { ...vehicle, isFavorite: !vehicle.isFavorite };
+              }
+              return vehicle;
+          })
+      );
+  }
+
     return (
             <section className="card-overlay">
               <div className="content-display">
@@ -100,14 +120,17 @@ export default function DisplayContainer() {
                     <div
                       key={data.id}
                       className="vehicles-card col-md-3 col-sm-3"
-                      onClick={() => window.location.href=`${data.image}`}
                       >
                         
-                    <a href={data.image} target="_blank" rel="noopener noreferrer" className="pt-2">
+                    <a href={data.image} className="pt-2">
                       <img src={data.image}
                       className="vehicle-image"
                        alt={`imagem do veículo ${data.description} cor ${data.color}`}></img>
                     </a>
+                    <div className="toggle-fav-icon" >
+                      <FaHeart title={ "Marcar como favorito "} style={{ color: data.isFavorite ? "red" : "grey", cursor: "pointer"}}
+                      onClick={() => toggleFavorite(data.id)} />
+                    </div>
                     <h6 className="mt-3">{data.model}</h6>
                     <h5 className="mt-2">{data.description}</h5>
                     <h6 className="mt-2">{data.price}</h6>
@@ -117,6 +140,7 @@ export default function DisplayContainer() {
                   ))}
                 </div>
               </div>
+              <ToastContainer />
             </section>
         );
     }

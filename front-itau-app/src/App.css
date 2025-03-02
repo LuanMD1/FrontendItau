@@ -120,3 +120,10 @@
   display: flex;
   justify-content: end;
 }
+
+.toggle-fav-icon {
+  font-size: 1.25rem;
+  margin-top: 10px;
+  display: flex;
+  justify-content: right;
+}

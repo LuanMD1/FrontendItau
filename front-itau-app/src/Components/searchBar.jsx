@@ -1,16 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaSearch } from 'react-icons/fa';
 
-export default function SearchBar() {
+
+export default function SearchBar({ onSearch }) {
+    const [searchInput, setSearchInput] = useState("");
+
+    const handleInputChange = (event) => {
+        setSearchInput(event.target.value);
+    };
 
     function handleSearch() {
-        console.log("teste")
-      }
+        onSearch(searchInput);
+    };
 
-    return (
-    <div class="input-group mb-3">
-        <input type="text" class="form-control" className="input-search" placeholder="Buscar por marca" aria-label="Buscar por marca" />
-        <button class="btn btn-search" onClick={() => handleSearch()} type="button"><FaSearch /></button>
+    return (    
+    <div class="input-group">
+        <input type="text"
+          className="input-search"
+           placeholder="Buscar por marca ou modelo"
+            aria-label="Buscar por marca"
+            value={searchInput}
+            onChange={handleInputChange}
+         />
+        <button class="btn btn-search" type="button" onClick={handleSearch}><FaSearch /></button>
     </div>
     );
 }

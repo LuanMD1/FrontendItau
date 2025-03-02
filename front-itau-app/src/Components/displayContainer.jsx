@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import SearchBar from "./searchBar";
 // import Modal from "react-responsive-modal";
 
 export default function DisplayContainer() {
@@ -23,7 +24,7 @@ export default function DisplayContainer() {
                 ],
             },
             {
-                id: 0,
+                id: 1,
                 image: "/src/assets/images/ferrari.png",
                 brand: "Ferrari",
                 model: "Ferrari LaFerrari",
@@ -38,7 +39,7 @@ export default function DisplayContainer() {
                 ],
             },
             {
-                id: 0,
+                id: 2,
                 image: "/src/assets/images/hrv.png",
                 brand: "Hyundai",
                 model: "Hyundai HRV",
@@ -53,7 +54,7 @@ export default function DisplayContainer() {
                 ],
             },
             {
-                id: 0,
+                id: 3,
                 image: "/src/assets/images/creta.png",
                 brand: "Hyundai",
                 model: "Hyundai Creta",
@@ -68,7 +69,7 @@ export default function DisplayContainer() {
                 ],
             },
             {
-                id: 0,
+                id: 4,
                 image: "/src/assets/images/hb20.png",
                 brand: "Hyundai",
                 model: "Hyundai HB20",
@@ -85,13 +86,14 @@ export default function DisplayContainer() {
         ];
     
         setVehicles(vehicles);
-    }, [vehicles]); 
+    }, []); 
 
-return (
-            <container className="card-overlay">
+    return (
+            <section className="card-overlay">
               <div className="content-display">
                 <h4 className="card-title">
-                  Teste Itaú - iCarros
+                  Teste Itaú iCarros
+                  <SearchBar />
                 </h4>
                 <div className="card-vehicles col-md-12 col-sm-12">
                   {vehicles.map((data) => (
@@ -108,14 +110,14 @@ return (
                     </a>
                     <h6 className="mt-3">{data.model}</h6>
                     <h5 className="mt-2">{data.description}</h5>
-                    <h8 className="mt-2">{data.price}</h8>
+                    <h6 className="mt-2">{data.price}</h6>
                     <p className="data-info">{data.information.join("\n")}</p>
                       <button className="btn btn-outline-primary btn-contact mt-2">Contato</button> 
                     </div>
                   ))}
                 </div>
               </div>
-            </container>
+            </section>
         );
     }
     

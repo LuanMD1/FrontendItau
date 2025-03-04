@@ -14,6 +14,25 @@
   align-items: center;
 }
 
+.icon {
+  text-decoration: none;
+  color: orangered;
+  cursor: pointer;
+}
+
+.icon:hover {
+  text-decoration: none;
+  color: orangered;
+  cursor: pointer;
+}
+
+.link {
+  text-decoration: none;
+  color: orangered;
+  cursor: pointer;
+}
+
+
 .content-display {
   background: #fff;
   padding: 1rem;
@@ -44,13 +63,13 @@
 
 .vehicles-card {
   background: #f9f9f9;
-  padding: 10px;
+  padding: 20px;
   overflow: hidden;
   border-radius: 10px;
   transition: 0.4s;
   cursor: pointer;
   width: 19.5%;
-  height: 65dvh;
+  height: fit-content;
   border: 0.10px solid rgb(208, 208, 208);
 }
 
@@ -66,6 +85,11 @@ header {
   justify-content: start;
   color: orangered;
   font-style: italic;
+  font-size: 1.25rem;
+}
+
+header.p {
+  width: 100%;
 }
 
 .vehicle-image {
@@ -82,13 +106,16 @@ header {
   color: orangered;
   border: 1px solid orangered;
   width: 100%;
+  box-shadow: none !important;
 }
 
-.btn-contact:hover {
+.btn-contact:hover,
+.btn-contact:active {
   background-color: orangered;
   transition: 0.4s ease-in-out;
   color: white;
   border: 1px solid white;
+  box-shadow: none !important;
 }
 
 .btn-search {
@@ -128,4 +155,57 @@ header {
   margin-top: 10px;
   display: flex;
   justify-content: right;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  width: 100%;
+  background: rgb(217, 248, 255);
+  height: 2rem;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;  
+  width: 500px;
+  text-align: center;
+}
+
+.modal-content h2 {
+  margin-bottom: 15px;
+}
+
+.modal-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.modal-content li {
+  margin: 10px 0;
+}
+
+.not-found-text {
+  width: 100%;
+  min-height: 50dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.25rem;
 }

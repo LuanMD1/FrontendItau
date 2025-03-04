@@ -5,15 +5,20 @@
     "brand": "Porsche",
     "model": "Porsche 911",
     "color": "Branco",
-    "price": "R$ 76.000,00",
+    "price": "R$ 976.000,00",
     "isFavorite": false,
-    "description": "Hyundai HB20 1.0 Comfort manual",
-    "information": [
-      "Localiza Seminovos",
-      "São Paulo, SP",
-      "2021-2022",
-      "48.785 Km"
-    ]
+    "description": "Porsche 911 3.0 bi-turbo Automatic",
+      "information": [
+        "iCarros Importados",
+        "São Paulo, SP",
+        "2023-2024",
+        "18.700 Km"
+      ],
+      "contact": [
+          "Jose Tester da Silva",
+          "11-9988776655",
+          "jose.tester@icarros.com"
+      ]
   },
   {
     "id": 1,
@@ -21,15 +26,20 @@
     "brand": "Ferrari",
     "model": "Ferrari LaFerrari",
     "color": "Vermelho",
-    "price": "R$ 76.000,00",
+    "price": "R$ 2.855.000,00",
     "isFavorite": false,
-    "description": "Hyundai HB20 1.0 Comfort manual",
-    "information": [
-      "Localiza Seminovos",
-      "São Paulo, SP",
-      "2021-2022",
-      "48.785 Km"
-    ]
+    "description": "Ferrari LaFerrari Motor V12 Automatic",
+      "information": [
+        "iCarros Importados",
+        "São Paulo, SP",
+        "2024-2025",
+        "8.485 Km"
+      ],
+      "contact": [
+      "Paulo Tester da Silva",
+      "11-7755223344",
+      "Paulo.tester@icarros.com"
+      ]
   },
   {
     "id": 2,
@@ -39,29 +49,39 @@
     "color": "Branco",
     "price": "R$ 186.000,00",
     "isFavorite": true,
-    "description": "Hyundai HRV 2.0 Comfort Automatic",
-    "information": [
-      "Localiza Seminovos",
-      "São Paulo, SP",
-      "2021-2022",
-      "48.785 Km"
-    ]
+    "description": "Hyundai HRV 1.5 Turbo Touring CVT automático",
+      "information": [
+        "Localiza Seminovos",
+        "São Paulo, SP",
+        "2023-2024",
+        "22.785 Km"
+      ],
+      "contact": [
+      "Lucas Tester da Silva",
+      "11-115599886633",
+      "lucas.tester@icarros.com"
+      ]
   },
   {
     "id": 3,
     "image": "/src/assets/images/creta.png",
     "brand": "Hyundai",
     "model": "Hyundai Creta",
-    "color": "Verde militar claro",
-    "price": "R$ 76.000,00",
+    "color": "Verde Claro",
+    "price": "R$ 136.000,00",
     "isFavorite": false,
-    "description": "Hyundai HB20 1.0 Comfort manual",
-    "information": [
-      "Localiza Seminovos",
-      "São Paulo, SP",
-      "2021-2022",
-      "48.785 Km"
-    ]
+    "description": "Hyundai Creta Atitude 1.6 Automatic",
+      "information": [
+        "iCarros",
+        "São Paulo, SP",
+        "2021-2022",
+        "28.885 Km"
+      ],
+      "contact": [
+          "Pedro Tester da Silva",
+          "11-5588331100",
+          "pedro.tester@icarros.com"
+      ]
   },
   {
     "id": 4,
@@ -71,12 +91,17 @@
     "color": "Preto",
     "price": "R$ 76.000,00",
     "isFavorite": true,
-    "description": "Hyundai HB20 1.0 Comfort manual",
-    "information": [
-      "Localiza Seminovos",
-      "São Paulo, SP",
-      "2021-2022",
-      "48.785 Km"
-    ]
+    "description": "Hyundai HB20 1.0 Comfort Manual",
+      "information": [
+        "Localiza Seminovos",
+        "São Paulo, SP",
+        "2021-2022",
+        "48.785 Km"
+      ],
+      "contact": [
+          "Fabio Tester da Silva",
+          "11-7766880212",
+          "fabio.tester@icarros.com"
+      ]
   }
 ]

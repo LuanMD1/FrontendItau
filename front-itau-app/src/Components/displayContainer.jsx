@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import SearchBar from "./searchBar";
 import { FaHeart } from 'react-icons/fa';
 import { ToastContainer, toast } from 'react-toastify';
-// import Modal from "react-responsive-modal";
+import ContactButton from "./ContactButton";
+import Footer from "./Footer";
 
 export default function DisplayContainer() {
     const [vehicles, setVehicles] = useState([]);
@@ -19,10 +20,10 @@ export default function DisplayContainer() {
         setSearchItem(searchInput);
     };
 
-        const filteredVehicles = vehicles.filter((vehicle) =>
-            vehicle.model.toLowerCase().includes(searchItem.toLowerCase()) ||
-            vehicle.brand.toLowerCase().includes(searchItem.toLowerCase())    
-        );
+    const filteredVehicles = vehicles.filter((vehicle) =>
+        vehicle.model.toLowerCase().includes(searchItem.toLowerCase()) ||
+        vehicle.brand.toLowerCase().includes(searchItem.toLowerCase())    
+      );
 
     function toggleFavorite(id) {
       setVehicles((prevVehicles) =>
@@ -42,7 +43,9 @@ export default function DisplayContainer() {
             <section className="card-overlay">
               <div className="content-display">
                 <header>
-                  Teste Itaú iCarros
+                  <a className="icon" href="/">
+                    <p>iCarros</p>
+                  </a>
                   <SearchBar onSearch={handleSearch} />
                 </header>
 
@@ -65,16 +68,19 @@ export default function DisplayContainer() {
 
                     <h6 className="mt-2">{data.model}</h6>
                     <h5 className="mt-2">{data.description}</h5>
+                      <hr/>
                     <h6 className="mt-2">{data.price}</h6>
-                    <p className="data-info">{data.information.join("\n")}</p>
-                      <button className="btn btn-outline-primary btn-contact mt-2">Contato</button> 
+                    <p className="data-info">{data.information.join(", ")}</p>
+                      <ContactButton vehicleId={data.id} />
                     </div>
                     ))
                  ) : (
+                  <div className="not-found-text">  
                     <p>Nenhum veículo encontrado</p>
-                  
+                  </div>
                   )}
                 </div>
+                <Footer />
               </div>
               <ToastContainer />
               </section>            

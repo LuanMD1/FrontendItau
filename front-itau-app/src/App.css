@@ -91,10 +91,14 @@ header.p {
   width: 100%;
 }
 
+.car-model {
+  margin: 0;
+}
+
 .vehicle-image {
-  margin-top: 1rem;
   width: 100%;
-  height: auto;
+  height: 10rem;
+  max-height: 12rem;
   border-radius: 6px !important;
 }
 
@@ -118,7 +122,7 @@ header.p {
 }
 
 .btn-search {
-  background-color: rgb(255, 92, 33);
+  background-color: rgb(255, 92, 33) !important;
   height: 2rem;
   color: white;
   display: flex;
@@ -153,7 +157,15 @@ header.p {
   font-size: 1.25rem;
   margin-top: 10px;
   display: flex;
-  justify-content: right;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.favorite-button {
+  border: none;
+  box-shadow: none;
+  color: rgb(209, 209, 209);
+  background: transparent;
 }
 
 footer {
@@ -207,4 +219,9 @@ footer {
   align-items: center;
   text-align: center;
   font-size: 1.25rem;
+  flex-direction: column;
+}
+
+.carousel-item {
+  transition: transform 0.3s ease-in-out, opacity 1s ease-in-out;
 }

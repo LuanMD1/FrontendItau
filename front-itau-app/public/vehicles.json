@@ -1,7 +1,12 @@
 [
   {
     "id": 0,
-    "image": "/src/assets/images/porsche.png",
+    "images": [
+      "/src/assets/images/porsche.png",
+      "/src/assets/images/porsche-view.png",
+      "/src/assets/images/porsche-rear.png",
+      "/src/assets/images/porsche-interior.png"
+      ],
     "brand": "Porsche",
     "model": "Porsche 911",
     "color": "Branco",
@@ -11,7 +16,7 @@
       "information": [
         "iCarros Importados",
         "São Paulo, SP",
-        "2023-2024",
+        "ano 2023-2024",
         "18.700 Km"
       ],
       "contact": [
@@ -22,17 +27,22 @@
   },
   {
     "id": 1,
-    "image": "/src/assets/images/ferrari.png",
+    "images": [
+      "/src/assets/images/ferrari-view.png",
+      "/src/assets/images/ferrari.png",
+      "/src/assets/images/ferrari-front.png",
+      "/src/assets/images/ferrari-interior.png"
+      ],
     "brand": "Ferrari",
-    "model": "Ferrari LaFerrari",
+    "model": "Ferrari F80",
     "color": "Vermelho",
     "price": "R$ 2.855.000,00",
     "isFavorite": false,
-    "description": "Ferrari LaFerrari Motor V12 Automatic",
+    "description": "Ferrari F80 V6 3.0 Hibrid Automatic",
       "information": [
         "iCarros Importados",
         "São Paulo, SP",
-        "2024-2025",
+        "ano 2024-2025",
         "8.485 Km"
       ],
       "contact": [
@@ -43,17 +53,22 @@
   },
   {
     "id": 2,
-    "image": "/src/assets/images/hrv.png",
+    "images": [
+      "/src/assets/images/hrv-front.png",
+      "/src/assets/images/hrv-rear.png",
+      "/src/assets/images/hrv.png",
+      "/src/assets/images/hrv-interior.png"
+       ],
     "brand": "Hyundai",
     "model": "Hyundai HRV",
     "color": "Branco",
     "price": "R$ 186.000,00",
-    "isFavorite": true,
+    "isFavorite": false,
     "description": "HRV 1.5 Turbo Touring CVT automático",
       "information": [
         "Localiza Seminovos",
         "São Paulo, SP",
-        "2023-2024",
+        "ano 2023-2024",
         "22.785 Km"
       ],
       "contact": [
@@ -64,7 +79,12 @@
   },
   {
     "id": 3,
-    "image": "/src/assets/images/creta.png",
+    "images": [
+      "/src/assets/images/creta-view.png",
+      "/src/assets/images/creta.png",
+      "/src/assets/images/creta-rear.png",
+      "/src/assets/images/creta-interior.png"
+      ],
     "brand": "Hyundai",
     "model": "Hyundai Creta",
     "color": "Verde Claro",
@@ -72,9 +92,9 @@
     "isFavorite": false,
     "description": "Hyundai Creta Atitude 1.6 Automatic",
       "information": [
-        "iCarros",
+        "Localiza Seminovos",
         "São Paulo, SP",
-        "2021-2022",
+        "ano 2021-2022",
         "28.885 Km"
       ],
       "contact": [
@@ -85,17 +105,22 @@
   },
   {
     "id": 4,
-    "image": "/src/assets/images/hb20.png",
+    "images": [
+      "/src/assets/images/hb20.png",
+      "/src/assets/images/hb20-front.png",
+      "/src/assets/images/hb20-view.png",
+      "/src/assets/images/hb20-interior.png"
+      ],
     "brand": "Hyundai",
     "model": "Hyundai HB20",
     "color": "Preto",
     "price": "R$ 76.000,00",
-    "isFavorite": true,
+    "isFavorite": false,
     "description": "Hyundai HB20 1.0 Comfort Manual",
       "information": [
         "Localiza Seminovos",
         "São Paulo, SP",
-        "2021-2022",
+        "ano 2021-2022",
         "48.785 Km"
       ],
       "contact": [

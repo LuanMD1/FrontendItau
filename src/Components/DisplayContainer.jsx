@@ -47,7 +47,7 @@ return (
 
                 <div className="toggle-fav-icon" >
                   <h6 className="vehicle-model">{data.model}</h6>
-                  <FavoriteButton vehicleId={data.id}/>
+                  <FavoriteButton vehicleId={data.id} />
                 </div> 
 
                 <h5 className="mt-2 description">{data.description}</h5>

@@ -1,3 +1,16 @@
+# Installing & Running the Project <br/> 
+Git clone the repository with: gitclone https://github.com/LuanMD1/FrontendItau <br/> 
+npm install (to install all dependencies & packages) <br/> 
+To run project: npm run dev <br/> 
+Local URL: http://localhost:5173/ <br/> 
+<br/> 
+# Dependencias e Pacotes utilizados no projeto
+React Bootstrap\
+React Toastify\
+React Icons\
+React Modal\
+Bootstrap
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

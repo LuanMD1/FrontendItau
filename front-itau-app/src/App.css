@@ -14,7 +14,22 @@
   align-items: center;
 }
 
-.icon {
+.logo {
+  text-decoration: none;
+  display: flex;
+  justify-content: start;
+  margin-left: 8%;
+  color: orangered;
+  cursor: pointer;
+}
+
+.title-orange {
+  text-decoration: none;
+  color: orangered;
+  cursor: pointer;
+}
+
+.title-orange:hover {
   text-decoration: none;
   color: orangered;
   cursor: pointer;
@@ -32,7 +47,6 @@
   cursor: pointer;
 }
 
-
 .content-display {
   background: #fff;
   padding: 1rem;
@@ -40,6 +54,7 @@
   height: 100dvh;
   text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: auto;
 }
 
 @media (min-width: 1024px) {
@@ -58,7 +73,8 @@
 .vehicles-view-section {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  justify-content: center;
+  gap: 5px;
 }
 
 .vehicles-card {
@@ -78,11 +94,17 @@
   border: 2px solid orangered; 
 }
 
+@media (max-width: 767px) {
+  .vehicles-card {
+    height: 60dvh;
+  }
+}
+
 header {
-  margin-top: 2rem;
+  margin-top: 1rem;
   display: flex;
-  justify-content: start;
-  color: orangered;
+  justify-content: start !important;
+  color: orangered !important;
   font-style: italic;
   font-size: 1.25rem;
 }
@@ -91,15 +113,21 @@ header.p {
   width: 100%;
 }
 
-.car-model {
+.vehicle-model {
   margin: 0;
 }
 
 .vehicle-image {
   width: 100%;
-  height: 10rem;
+  height: 12rem;
   max-height: 12rem;
   border-radius: 6px !important;
+}
+
+@media (max-width: 767px) {
+  .vehicle-image {
+    margin-top: 2rem;
+    }
 }
 
 .btn-contact {
@@ -138,7 +166,7 @@ header.p {
 }
 
 .input-search {
-  width: 25% !important;
+  width: 50% !important;
   height: 2rem;
   border: 1px solid rgb(252, 113, 62);
   border-radius: 6px;
@@ -147,9 +175,16 @@ header.p {
   box-shadow: none;
 }
 
+@media (max-width: 767px) {
+  .input-search {
+  width: 75% !important;
+  }
+}
+
 .input-group {
   display: flex;
   justify-content: end;
+  margin-right: 8%;
   width: 100% !important;
 }
 
@@ -176,6 +211,10 @@ footer {
   width: 100%;
   background: rgb(217, 248, 255);
   height: 2rem;
+}
+
+.description {
+  font-size: 1rem;
 }
 
 .modal-overlay {

@@ -14,15 +14,15 @@ export default function SearchBar({ onSearch }) {
     };
 
     return (    
-    <div class="input-group">
+    <div className="input-group">
         <input type="text"
-          className="input-search"
+          className="input-search col-md-6 col-sm-6"
            placeholder="Buscar por marca ou modelo"
             aria-label="Buscar por marca"
             value={searchInput}
             onChange={handleInputChange}
          />
-        <button class="btn btn-search" type="button" onClick={handleSearch}><FaSearch /></button>
+        <button className="btn btn-search" type="button" onClick={handleSearch}><FaSearch /></button>
     </div>
     );
 }

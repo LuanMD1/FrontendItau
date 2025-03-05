@@ -9,7 +9,6 @@ export default function ContactButton({vehicles, vehicleId}) {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
         useEffect(() => {
-            console.log(vehicles, vehicleId)
             if (vehicles && vehicles.length > 0) {
                 const selectedVehicle = vehicles.find((v) => v.id === vehicleId);
                 setVehicle(selectedVehicle);

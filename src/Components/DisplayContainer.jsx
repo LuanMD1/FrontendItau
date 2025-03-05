@@ -40,7 +40,7 @@ return (
             <div className="vehicles-view-section mt-1 row g-3">
               {filteredVehicles.length > 0 ? (
                 filteredVehicles.map((data) => (
-                  <div key={data.id} className="vehicles-display-cards col-sm-6 col-md-2 col-lg-2 d-flex">
+                  <div key={data.id} className="vehicles-display-cards col-sm-12 col-md-4 col-lg-4 col-xl-2 d-flex">
                   <div className="vehicles-card flex-fill">
                   
                 <ImageCarousel vehicles={vehicles || []} vehicleId={data.id}/>

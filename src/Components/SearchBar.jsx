@@ -17,7 +17,7 @@ export default function SearchBar({ onSearch }) {
     <div className="input-group">
         <input type="text"
           className="input-search col-md-6 col-sm-6"
-           placeholder="Buscar por marca ou modelo"
+           placeholder="Buscar por marca/modelo"
             aria-label="Buscar por marca"
             value={searchInput}
             onChange={handleInputChange}

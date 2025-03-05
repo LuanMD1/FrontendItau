@@ -48,7 +48,7 @@
       "contact": [
       "Paulo Tester da Silva",
       "11-7755223344",
-      "Paulo.tester@icarros.com"
+      "paulo.tester@icarros.com"
       ]
   },
   {
@@ -128,31 +128,5 @@
           "11-7766880212",
           "fabio.tester@icarros.com"
       ]
-  },
-  {
-  "id": 5,
-  "images": [
-    "/src/assets/images/porsche.png",
-    "/src/assets/images/porsche-view.png",
-    "/src/assets/images/porsche-rear.png",
-    "/src/assets/images/porsche-interior.png"
-    ],
-  "brand": "Porsche",
-  "model": "Porsche 911",
-  "color": "Branco",
-  "price": "R$ 976.000,00",
-  "isFavorite": false,
-  "description": "Porsche 911 3.0 bi-turbo Automatic",
-    "information": [
-      "iCarros Importados",
-      "São Paulo, SP",
-      "ano 2023-2024",
-      "18.700 Km"
-    ],
-    "contact": [
-        "Jose Tester da Silva",
-        "11-9988776655",
-        "jose.tester@icarros.com"
-    ]
   }
 ]

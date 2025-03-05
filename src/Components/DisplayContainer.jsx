@@ -55,7 +55,7 @@ return (
                 <h6 className="mt-2">{data.price}</h6>
                 <p className="data-info">{data.information?.join(", ") || "Informações indisponíveis" }</p>
 
-                  <ContactButton vehicleId={data.id} />
+                  <ContactButton vehicles={vehicles || []} vehicleId={data.id} />
                 </div>
                 </div>
                 ))

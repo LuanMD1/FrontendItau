@@ -1,4 +1,5 @@
 # Installing & Running the Project <br/> 
+in the terminal, use the following commands: <br/> 
 Git clone the repository with: gitclone https://github.com/LuanMD1/FrontendItau <br/> 
 npm install (to install all dependencies & packages) <br/> 
 To run project: npm run dev <br/> 

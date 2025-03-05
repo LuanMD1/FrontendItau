@@ -94,12 +94,6 @@
   border: 2px solid orangered; 
 }
 
-@media (max-width: 767px) {
-  .vehicles-card {
-    height: 60dvh;
-  }
-}
-
 header {
   margin-top: 1rem;
   display: flex;

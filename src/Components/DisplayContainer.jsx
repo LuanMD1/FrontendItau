@@ -23,7 +23,8 @@ export default function DisplayContainer() {
 
     const filteredVehicles = vehicles.filter((vehicle) =>
         vehicle.model.toLowerCase().includes(searchItem.toLowerCase()) ||
-        vehicle.brand.toLowerCase().includes(searchItem.toLowerCase())    
+        vehicle.brand.toLowerCase().includes(searchItem.toLowerCase()) ||   
+        vehicle.description.toLowerCase().includes(searchItem.toLowerCase())
       );
 
 return (
